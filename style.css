@@ -32,7 +32,8 @@ li {
 }
 
 .header img {
-    margin: 10px 40px;
+    margin: 10px 32px;
+    width: 287px;
 }
 
 .navegation {
@@ -70,7 +71,9 @@ li {
 }
 
 .info img {
-    margin: 30px;
+    margin: 30px 20px;
+    width: 341px;
+    height: 200px;
 }
 
 .container-welcome {
@@ -78,6 +81,7 @@ li {
     width: 400px;
     height: 100px;
     padding-left: 105px;
+    margin-right: 5px;
 }
 
 .container-welcome h1 {
