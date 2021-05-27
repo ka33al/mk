@@ -73,10 +73,9 @@ li {
 }
 
 .info img {
-    max-width: 100%;
+    width: 100%;
     margin: 25px;
     grid-area: "img";
-    grid-row: img;
 }
 
 .container-welcome {
@@ -159,7 +158,7 @@ li {
 
 .special {
     width: 180px;
-    height: 160px;
+    height: 180px;
     top: 0px;
     left: 0px;
     opacity: 0;
@@ -170,10 +169,12 @@ li {
 .special:hover {
     transition: .2s ease-in;
     opacity: 1;
+    font-size: 20px;
     background-color: white;
     text-transform: uppercase;
-    color: red;
-    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    font-family: 'Shadows Into Light', sans-serif;
+    font-weight: 800;
 }
 
 .footer {
@@ -198,11 +199,15 @@ li {
     font-weight: 200;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
     .info .container {
         grid-template-areas: "img" "welcome" "welcom";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .info img {
-        max-width: 60%;
+        max-width: 50%;
     }
 }
