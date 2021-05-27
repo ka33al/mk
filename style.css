@@ -59,25 +59,30 @@ li {
 }
 
 .info {
-    justify-content: space-around;
-    flex-wrap: wrap;
     background-color: #F9F9F9;
-    position: relative;
     border-bottom: 1px solid #dedede;
 }
 
 .info .container {
-    display: flex;
+    margin: 0px auto;
     position: relative;
+    display: grid;
+    grid-template-areas: "img welcome welcom";
+    grid-gap: 20px;
+    grid-auto-rows: max-content;
 }
 
 .info img {
-    margin: 30px 20px;
-    width: 341px;
+    max-width: 100%;
+    margin: 25px;
+    grid-area: "img";
+    grid-row: img;
 }
 
 .container-welcome {
-    width: 400px;
+    max-width: 400px;
+    min-width: 50px;
+    grid-area: "welcome";
 }
 
 .container-welcome h1 {
@@ -120,8 +125,7 @@ li {
 }
 
 .info-games img {
-    width: 200px;
-    height: 160px;
+    width: 100%;
     opacity: 1;
 }
 
@@ -196,7 +200,9 @@ li {
 
 @media (max-width: 800px) {
     .info .container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-areas: "img" "welcome" "welcom";
+    }
+    .info img {
+        max-width: 60%;
     }
 }
