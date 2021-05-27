@@ -59,10 +59,11 @@ li {
 }
 
 .info {
+    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #F9F9F9;
     position: relative;
     border-bottom: 1px solid #dedede;
-    display: block;
 }
 
 .info .container {
@@ -73,15 +74,10 @@ li {
 .info img {
     margin: 30px 20px;
     width: 341px;
-    height: 200px;
 }
 
 .container-welcome {
-    max-width: 500px;
     width: 400px;
-    height: 100px;
-    padding-left: 105px;
-    margin-right: 5px;
 }
 
 .container-welcome h1 {
@@ -196,4 +192,11 @@ li {
 .footer span {
     color: white;
     font-weight: 200;
+}
+
+@media (max-width: 800px) {
+    .info .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
